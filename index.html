@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>WEB PB RM TANJUNGPURA</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<body>
+		<div id="particles-js"></div>
+		<header>
+			<img src="assets/foto/pbrm.png" alt="rmtjpura" class="pbrm"/>
+			<h1 class="logo">PB RM Tanjungpura</h1>
+			<nav>
+				<ul>
+					<li><a href="#">TENTANG</a></li>
+					
+					<li class="dropdown">
+						<a href="#" onclick="toggleMenu(event)">KEGIATAN ▼</a>
+						<ul class="dropdown-menu" id="dropdownMenu">
+						  <li><a href="#">Olah Raga</a></li>
+						  <li><a href="#">Sparing</a></li>
+						  <li><a href="#">Kunjungan</a></li>
+						  <li><a href="#">Turnamen</a></li>
+						  <li><a href="#">Lain-lain</a></li>
+						</ul>
+					  </li>
+
+					  <li class="dropdown">
+						<a href="#" onclick="toggleMenu(event)">DOKUMENTASI ▼</a>
+						<ul class="dropdown-menu" id="dropdownMenu">
+						  <li><a href="#">Foto/Gambar</a></li>
+						  <li><a href="#">Vidio</a></li>
+						</ul>
+					  </li>
+
+					<li><a href= "https://khoriaplikasi.blogspot.com" target="_blank">KONTAK</a></li>
+				</ul>
+			</nav>
+			<button class="btn-cta">Masuk</button>
+			<button class="btn-cta">Daftar</button>
+		</header>
+
+		<div class="container">
+			<div class="intro">
+				<p class="title">Hallo, PB RM disini..!</p>
+				<p class="description">Club Bulutangkis Tanjungpura</p>
+				<img src="assets/foto/spanduk.png" alt="Pamflet" class="img-foto"/>
+				<img src="assets/foto/juara.png" alt="Pamflet" class="img-foto"/>
+			</div>
+		</div>
+		<div class="paralax">
+			<div class="tentang">
+				<p class="judul">PB RM Desa Tanjungpura</p>
+				<p class="ket1">Adalah Club Bulutangkis yang anggotanya para Bapak-bapak pecinta olah raga bulutangkis,</p>
+				<p class="ket2">sehingga menjadi sebuah club yang disegani dan di takuti oleh semua lawan di setiap pertandingan turnamen atau sparing</p>
+				<p class="ket2">baik di dunia maupun di akhirat.</p>
+				<div class="gabung">
+					<button class="btn-cta" onclick="alert('Silahkan hubungi no 081297250050')">Gabung Kita</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="card">
+					<div class="card-item">
+						<img src="assets/icon/smes_3.jpg" alt="icon 1" class="icon"/>
+						<p class="card-judul">Jadwal Latihan</p>
+					</div>
+					<div class="card-item">
+						<img src="assets/icon/tangkas.png" alt="icon 1" class="icon"/>
+						<p class="card-judul">Separing / Kunjungan</p>
+					</div>
+					<div class="card-item">
+						<img src="assets/icon/Trophy.jpg" alt="icon 1" class="icon"/>
+						<p class="card-judul">Turnamen / Lomba</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<footer>
+			<p class="ket2">&copy; Bukhori Website 2026</p>
+		</footer>
+	</body>
+</html>
