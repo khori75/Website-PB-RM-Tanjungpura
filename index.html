@@ -1,4 +1,8 @@
 <html>
+	<div class="running-text">
+		<p>Selamat Datang di Website PB RM Tanjungpura ( • Latihan Rutin • Sparing • Turnamen • Salam Olahraga • )</p>
+	  </div>
+
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -7,8 +11,54 @@
 		<link rel="stylesheet" href="style.css"/>
 	</head>
 
+	<script>
+		document.addEventListener("click", function(e) {
+		  const particleCount = 40; // jumlah partikel
+		
+		  for (let i = 0; i < particleCount; i++) {
+			const particle = document.createElement("div");
+			particle.className = "particle";
+		
+			// posisi awal (titik klik)
+			particle.style.left = e.pageX + "px";
+			particle.style.top = e.pageY + "px";
+		
+			// arah random
+			const angle = Math.random() * 2 * Math.PI;
+			const distance = Math.random() * 120;
+		
+			const x = Math.cos(angle) * distance + "px";
+			const y = Math.sin(angle) * distance + "px";
+		
+			particle.style.setProperty("--x", x);
+			particle.style.setProperty("--y", y);
+		
+			// warna random
+			const colors = ["#FF6A3D", "#FFD700", "#00FFFF", "#FFFFFF"];
+			particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+		
+			document.body.appendChild(particle);
+		
+			setTimeout(() => {
+			  particle.remove();
+			}, 800);
+		  }
+		});
+	</script>
+
+	<script>
+		function toggleMenu(e) {
+		e.preventDefault();
+		const submenu = e.target.nextElementSibling;
+		submenu.classList.toggle("active");
+		}
+	</script>
+
+	<img src="assets/icon/dokar.gif" class="floating-img">
 	<body>
+		<div id="content-area"></div>
 		<div id="particles-js"></div>
+		<div class="snow"></div>
 		<header>
 			<img src="assets/foto/pbrm.png" alt="rmtjpura" class="pbrm"/>
 			<h1 class="logo">PB RM Tanjungpura</h1>
@@ -19,11 +69,10 @@
 					<li class="dropdown">
 						<a href="#" onclick="toggleMenu(event)">KEGIATAN ▼</a>
 						<ul class="dropdown-menu" id="dropdownMenu">
-						  <li><a href="#">Olah Raga</a></li>
+						  <li><a href="#">Jadwal Latihan</a></li>
 						  <li><a href="#">Sparing</a></li>
 						  <li><a href="#">Kunjungan</a></li>
 						  <li><a href="#">Turnamen</a></li>
-						  <li><a href="#">Lain-lain</a></li>
 						</ul>
 					  </li>
 
@@ -32,6 +81,16 @@
 						<ul class="dropdown-menu" id="dropdownMenu">
 						  <li><a href="#">Foto/Gambar</a></li>
 						  <li><a href="#">Vidio</a></li>
+
+						  <li class="has-submenu">
+							<a href="#" onclick="toggleMenu(event)">Dokumen ▼</a>
+							<ul class="submenu">
+							  <li><a href="assets/berkas/Proposal.pdf" target="_blank">📄 Proposal</a></li>
+							  <li><a href="assets/berkas/Dokumentasi.pdf" target="_blank">📄 Dokumentasi</a></li>
+							  <li><a href="assets/berkas/Piagam.pdf" target="_blank">📄 Piagam</a></li>
+							</ul>
+						  </li>
+
 						</ul>
 					  </li>
 
@@ -46,8 +105,8 @@
 			<div class="intro">
 				<p class="title">Hallo, PB RM disini..!</p>
 				<p class="description">Club Bulutangkis Tanjungpura</p>
-				<img src="assets/foto/spanduk.png" alt="Pamflet" class="img-foto"/>
-				<img src="assets/foto/juara.png" alt="Pamflet" class="img-foto"/>
+				<img src="assets/foto/spanduk.png" alt="..." class="img-foto"/>
+				<img src="assets/foto/juara.png" alt="..." class="img-foto"/>
 			</div>
 		</div>
 		<div class="paralax">
@@ -55,9 +114,9 @@
 				<p class="judul">PB RM Desa Tanjungpura</p>
 				<p class="ket1">Adalah Club Bulutangkis yang anggotanya para Bapak-bapak pecinta olah raga bulutangkis,</p>
 				<p class="ket2">sehingga menjadi sebuah club yang disegani dan di takuti oleh semua lawan di setiap pertandingan turnamen atau sparing</p>
-				<p class="ket2">baik di dunia maupun di akhirat.</p>
+				<p class="ket2">yang selenggarakan baik di dunia maupun di akhirat.</p>
 				<div class="gabung">
-					<button class="btn-cta" onclick="alert('Silahkan hubungi no 081297250050')">Gabung Kita</button>
+					<button class="btn-cta" onclick="alert('Silahkan hubungi no 081297250050')">Gabung dengan Kami</button>
 				</div>
 			</div>
 			<div class="container">
