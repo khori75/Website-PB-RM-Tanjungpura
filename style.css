@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Bernard MT Condensed;
 	scroll-behavior: smooth;
   }
   
@@ -14,6 +13,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	font-family: Bernard MT Condensed;
 }
 
 .pbrm {
@@ -42,6 +42,7 @@ header {
 	background: #FF6A3D;
 	border-radius: 8px;
 	cursor: pointer;
+	font-family: Bernard MT Condensed;
 }
 
 .btn-cta:hover {
@@ -178,12 +179,6 @@ a {
 	font-family: Arial Narrow
 }
 
-.ket2 {
-	font-size: 18px;
-	font-weight: bold;
-	font-family: Arial Narrow
-}
-
 .gabung {
 	margin-top: 10px;
 }
@@ -225,6 +220,27 @@ footer {
 	text-align: center;
 	background: linear-gradient(to right, rgb(2, 12, 52), #2f4791);
 	color: #eaeaea;
+}
+
+.daftar {
+	display: flex;
+	justify-content: center;
+	color: black;
+	padding: 10px;
+	gap: 30px;
+	text-align: center;
+	font-family: Arial Narrow;
+}
+
+.daftar:hover {
+	color: #FF6A3D;
+	transition: all .3s ease-in-out;
+}
+
+.footer {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial Narrow
 }
 
 @media screen and (max-width: 500px) {

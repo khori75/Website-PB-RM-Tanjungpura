@@ -81,7 +81,6 @@
 						<ul class="dropdown-menu" id="dropdownMenu">
 						  <li><a href="#">Foto/Gambar</a></li>
 						  <li><a href="#">Vidio</a></li>
-
 						  <li class="has-submenu">
 							<a href="#" onclick="toggleMenu(event)">Dokumen ▼</a>
 							<ul class="submenu">
@@ -112,9 +111,9 @@
 		<div class="paralax">
 			<div class="tentang">
 				<p class="judul">PB RM Desa Tanjungpura</p>
-				<p class="ket1">Adalah Club Bulutangkis yang anggotanya para Bapak-bapak pecinta olah raga bulutangkis,</p>
-				<p class="ket2">sehingga menjadi sebuah club yang disegani dan di takuti oleh semua lawan di setiap pertandingan turnamen atau sparing</p>
-				<p class="ket2">yang selenggarakan baik di dunia maupun di akhirat.</p>
+				<p class="ket1">Adalah sebuah club cabang olah raga bulutangkis yang beranggotakan para Bapak-bapak pecinta olah raga bulutangkis,</p>
+				<p class="ket1">dengan latihan rutin, semangat dan konsisten sehingga menjadi sebuah club yang disegani dan di takuti oleh semua lawan</p>
+				<p class="ket1">dalam setiap pertandingan turnamen atau sparing yang diselenggarakan baik di dunia maupun di akhirat.</p>
 				<div class="gabung">
 					<button class="btn-cta" onclick="alert('Silahkan hubungi no 081297250050')">Gabung dengan Kami</button>
 				</div>
@@ -135,9 +134,93 @@
 					</div>
 				</div>				
 			</div>
+
+			<div class="daftar">
+				<form action="proses.php" method="POST">
+					<tr>
+						<td width="75" align="center" valign="top">
+							<table width="315" border="0" cellspacing="2" cellpadding="2" bgcolor="blue">
+								<tr>
+									<td width="300" align="center" nowrap="nowrap"><font color="white" size="5" face="Arial" ><a href="#">Silahkan Daftar Disini</a></font></td>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+						
+					<table width="100%" heigth="60" border="0" cellspacing="5" cellpadding="5" bgcolor="yellow">
+						<tr>
+							<td>Nama</td>
+							<td>: <input type="text" name="nama" id="nama"></td>
+						</tr>
+				
+						<tr>
+							<td>Alamat :</td>
+							<td> &nbsp; <textarea name="alamat" id="alamat" cols="20" row="5" ></textarea></td>
+						</tr>
+
+						<tr>
+							<td>Usia</td>
+							<td>: <input type="text" name="usia" id="usia"></td>
+						</tr>
+
+						<tr>
+							<td>Jenis Kelamin</td>
+								<td>:
+									<input type="radio" name="jenkel" id="jenkel" value="laki-laki">Laki-laki
+									<input type="radio" name="jenkel" id="jenkel" value="perempuan">Perempuan
+								</td>
+						</tr>
+			
+						<tr>
+							<td>Hobby</td>
+							<td>:
+								<select name="hobby" id="hobby">
+									<option disabled selected value> --Pilih Olahraga--</option>
+									<option value="Sepak_bola">Sepak Bola</option>
+									<option value="Bulutangkis">Bulutangkis</option>
+									<option value="Bola_voli">Bola Voli</option>
+									<option value="Basket">Bola Basket</option>
+									<option value="Tenis_meja">Tenis Meja</option>
+									<option value="Takrow">Sepak Takrow</option>
+								</select>
+							</td>
+						</tr>
+				
+						<tr>
+							<td>Kelas Pemain</td>
+								<td>:
+									<input type="checkbox" name="fula">Full (A)
+									<input type="checkbox" name="fulb">Full (B)
+									<input type="checkbox" name="fulc">Full (C)
+								</td>
+							</tr>
+				
+						<tr>
+							<td>Type Pemain</td>
+								<td>:
+									<input type="radio" name="gansing" id="gansing" value="single">Single
+									<input type="radio" name="gansing" id="gansing" value="ganda">Ganda
+								</td>
+						</tr>
+				
+						<tr>
+							<td>Catatan :</td>
+							<td> &nbsp; <textarea name="catatan" id="catatan" cols="20" row="5"></textarea></td>
+						</tr>
+						
+						<table width="315" border="0" cellspacing="2" cellpadding="2" bgcolor="blue">
+							<tr>
+								<td colspan="2"><center><input type="submit" value="Kirim"</center></td>
+							</tr>
+						</table>
+					</table>
+				</form>
+			</div>
 		</div>
+		
 		<footer>
-			<p class="ket2">&copy; Bukhori Website 2026</p>
+			<p class="footer">&copy; Bukhori Website 2026</p>
 		</footer>
 	</body>
 </html>
